@@ -1,0 +1,7 @@
+ui_icons_display.display:
+  path: '/admin/config/media/iconset/icon-display'
+  defaults:
+    _controller: '\Drupal\ui_icons\Controller\IconDisplayController::display'
+    _title: 'Bootstrap Icon Display'
+  requirements:
+    _permission: 'access content'
