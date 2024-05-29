@@ -1,0 +1,6 @@
+bootstrap_icons:
+  label: 'Bootstrap Icons'
+  plugin: 'svg'
+  assets:
+    - '/libraries/bootstrap-icons/house.svg'
+    - '/libraries/bootstrap-icons/people.svg'
