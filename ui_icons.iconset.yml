@@ -2,11 +2,30 @@ bootstrap_icons:
   label: 'Bootstrap Icons'
   plugin: 'svg'
   assets:
-    - '/libraries/bootstrap-icons/house.svg'
-    - '/libraries/bootstrap-icons/people.svg'
-remix_icons:
-  label: 'Remix Icons'
+    - '/libraries/bootstrap-icons/icons'
+
+dsfr_remixicons:
+  label: 'DSFR Remix Icons'
   plugin: 'svg'
   assets:
-    - '/libraries/remixicon/arrow-left-up-line.svg'
-    - '/libraries/remixicon/mail-line.svg'
+    - '/libraries/remixicons/icons'
+    - '/libraries/remixicons/fonts/remixicon.symbol.svg'
+    - 'https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.symbol.svg'
+
+tailwind:
+  label: 'Tailwind'
+  plugin: 'svg'
+  assets:
+    - '/libraries/heroicons/optimized/24/outline'
+    - '/libraries/heroicons/src/24/solid'
+
+uswsd:
+  label: 'US Web Design System'
+  plugin: 'svg'
+  assets:
+    - '/libraries/uswds/packages/usa-icon/src/img/usa-icons-bg'
+    - '/libraries/uswds/packages/usa-icon/src/img/uswds-icons'
+
+
+
+

@@ -1,0 +1,8 @@
+name: Iconset Library
+type: module
+description: 'A sous module of UI Icons to display icons library'
+core_version_requirement: ^9 || ^10
+package: Custom
+dependencies:
+  - iconset:iconset
+  - ui_icons:ui_icons
