@@ -1,0 +1,10 @@
+name: 'UI Icons Test'
+type: module
+description: 'A custom module to display icons using Iconset'
+core_version_requirement: ^9 || ^10
+package: Custom
+dependencies:
+  - iconset:iconset
+  - ui_icons:ui_icons
+  - ui_icons_library:ui_icons_library
+
