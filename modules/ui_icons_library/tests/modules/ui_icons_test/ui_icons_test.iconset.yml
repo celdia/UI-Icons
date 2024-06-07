@@ -26,6 +26,11 @@ uswsd:
     - '/libraries/uswds/packages/usa-icon/src/img/usa-icons-bg'
     - '/libraries/uswds/packages/usa-icon/src/img/uswds-icons'
 
+material_icons:
+  label: 'Material icons'
+  plugin: 'codepoints'
+  assets:
+    - 'https://raw.githubusercontent.com/google/material-design-icons/master/font/MaterialIconsOutlined-Regular.codepoints'
 
 
 
