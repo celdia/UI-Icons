@@ -19,43 +19,26 @@ use Drupal\ui_icons\Asset\CodepointsAsset;
 class CodepointsHandler extends PluginBase implements IconHandlerInterface {
 
   /**
-   * URL to the codepoints file.
-   */
-  const CODEPOINTS_URL = 'https://raw.githubusercontent.com/google/material-design-icons/master/font/MaterialIconsOutlined-Regular.codepoints';
-
-  /**
    * {@inheritdoc}
    */
   public function createAssets($asset_info, IconsetInterface $iconset) {
-    // @todo get url from $asset_info,
-    return new CodepointsAsset(static::CODEPOINTS_URL);
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function supports(IconsetInterface $iconset) {
-    // Check if the iconset supports this handler.
-    return $iconset->getType() === 'codepoints';
+    return new CodepointsAsset($asset_info);
   }
 
   /**
    *
    */
   public function build($icon_id, AssetInterface $iconset, array $options = []) {
-    // @todo don't hardcode this here
+    $config = $this->configuration;
     return [
-      "#type" => "html_tag",
-      "#tag" => "span",
-      "#value" => $icon_id,
-      "#attributes" => [
-        "class" => [
-          "material-icons-outlined",
-        ],
+      '#type' => 'inline_template',
+      "#template" => $config['template'],
+      "#context" => [
+        'icon_id' => $icon_id,
       ],
       "#attached" => [
         "library" => [
-          "ui_icons_test/material",
+          $config['library'],
         ],
       ],
     ];
@@ -74,7 +57,18 @@ class CodepointsHandler extends PluginBase implements IconHandlerInterface {
    */
   public function formatJson(AssetInterface $asset) {
     // @todo Implement formatJson() method.
-    return [];
+    // return [];
+    $icons = $asset->getIcons();
+    $formatted_icons = [];
+
+    foreach ($icons as $icon_id => $icon_data) {
+      $formatted_icons[] = [
+        'id' => $icon_id,
+        'label' => $icon_data['label'],
+      ];
+    }
+
+    return json_encode($formatted_icons);
   }
 
 }

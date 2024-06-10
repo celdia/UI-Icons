@@ -26,11 +26,22 @@ uswsd:
     - '/libraries/uswds/packages/usa-icon/src/img/usa-icons-bg'
     - '/libraries/uswds/packages/usa-icon/src/img/uswds-icons'
 
-material_icons:
-  label: 'Material icons'
+material_icons_outlined:
+  label: 'Material icons Outlined'
   plugin: 'codepoints'
+  config:
+    template : '<span class="material-icons-outlined">{{ icon_id }}</span>'
+    library: 'ui_icons_test/material'
   assets:
     - 'https://raw.githubusercontent.com/google/material-design-icons/master/font/MaterialIconsOutlined-Regular.codepoints'
 
+material_icons_round:
+  label: 'Material Icon Round'
+  plugin: 'codepoints'
+  config:
+    template: '<span class="material-icons-round">{{ icon_id }}</span>'
+    library: 'ui_icons_test/material'
+  assets:
+    - 'https://raw.githubusercontent.com/google/material-design-icons/master/font/MaterialIconsRound-Regular.codepoints'
 
 

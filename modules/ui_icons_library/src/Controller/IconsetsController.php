@@ -44,6 +44,7 @@ class IconsetsController extends ControllerBase {
         ],
       ];
     }
+
     return $build;
   }
 
