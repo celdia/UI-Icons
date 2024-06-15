@@ -4,8 +4,14 @@ bootstrap_icons:
   assets:
     - '/libraries/bootstrap-icons/icons'
 
-dsfr_remixicons:
-  label: 'DSFR Remix Icons'
+dsfr:
+  label: 'DSFR'
+  plugin: 'svg'
+  assets:
+    - '/libraries/dsfr/src/core/icon/buildings'
+
+remixicons:
+  label: 'Remix Icons'
   plugin: 'svg'
   assets:
     - '/libraries/remixicons/icons'
