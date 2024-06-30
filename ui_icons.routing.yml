@@ -1,7 +1,24 @@
-ui_icons_display.display:
-  path: '/admin/config/media/iconset/icon-display'
+ui_suite.index:
+  path: '/admin/appearance/ui-libraries'
   defaults:
-    _controller: '\Drupal\ui_icons\Controller\IconDisplayController::display'
-    _title: 'Bootstrap Icon Display'
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'UI libraries'
+  requirements:
+    _permission: 'access patterns page+access_ui_styles_library+access_ui_examples_library'
+
+ui_icons.overview:
+  path: '/icons'
+  defaults:
+    _controller: '\Drupal\ui_icons\Controller\IconsetsController::overview'
+    _title: 'Iconsets library'
   requirements:
     _permission: 'access content'
+
+ui_icons.single:
+  path: '/icons/{iconset_id}'
+  defaults:
+    _controller: '\Drupal\ui_icons\Controller\IconsetsController::single'
+    _title: 'Iconset details'
+  requirements:
+    _permission: 'access content'
+

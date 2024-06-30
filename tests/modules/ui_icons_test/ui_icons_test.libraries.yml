@@ -1,0 +1,4 @@
+material:
+  css:
+    base:
+        https://cdn.jsdelivr.net/npm/material-icons@1.13.12/iconfont/material-icons.min.css: {}

@@ -1,0 +1,78 @@
+bootstrap_icons:
+  label: 'Bootstrap Icons'
+  plugin: 'svg'
+  assets:
+    - '/libraries/bootstrap-icons/icons'
+
+dsfr:
+  label: 'DSFR'
+  plugin: 'svg'
+  assets:
+    - '/libraries/dsfr/src/core/icon'
+
+remixicons:
+  label: 'Remix Icons'
+  plugin: 'svg'
+  assets:
+    - '/libraries/remixicons/icons'
+    - '/libraries/remixicons/fonts/remixicon.symbol.svg'
+    - 'https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.symbol.svg'
+
+tailwind:
+  label: 'Tailwind'
+  plugin: 'svg'
+  assets:
+    - '/libraries/heroicons/optimized/24/outline'
+    - '/libraries/heroicons/src/24/solid'
+
+uswsd:
+  label: 'US Web Design System'
+  plugin: 'svg'
+  assets:
+    - '/libraries/uswds/packages/usa-icon/src/img/usa-icons-bg'
+    - '/libraries/uswds/packages/usa-icon/src/img/uswds-icons'
+
+material_icons_outlined:
+  label: 'Material Icons Outlined'
+  plugin: 'codepoints'
+  config:
+    template : '<span class="material-icons-outlined">{{ icon_id }}</span>'
+    library: 'ui_icons_test/material'
+  assets:
+    - 'https://raw.githubusercontent.com/google/material-design-icons/master/font/MaterialIconsOutlined-Regular.codepoints'
+
+material_icons_round:
+  label: 'Material Icons Round'
+  plugin: 'codepoints'
+  config:
+    template: '<span class="material-icons-round">{{ icon_id }}</span>'
+    library: 'ui_icons_test/material'
+  assets:
+    - 'https://raw.githubusercontent.com/google/material-design-icons/master/font/MaterialIconsRound-Regular.codepoints'
+
+material_icons_sharp:
+  label: 'Material Icons Sharp'
+  plugin: 'codepoints'
+  config:
+    template: '<span class="material-icons-sharp">{{ icon_id }}</span>'
+    library: 'ui_icons_test/material'
+  assets:
+    - 'https://raw.githubusercontent.com/google/material-design-icons/master/font/MaterialIconsSharp-Regular.codepoints'
+
+material_icons_two_tone:
+  label: 'Material Icons Two Tone'
+  plugin: 'codepoints'
+  config:
+    template: '<span class="material-icons-two-tone">{{ icon_id }}</span>'
+    library: 'ui_icons_test/material'
+  assets:
+    - 'https://raw.githubusercontent.com/google/material-design-icons/master/font/MaterialIconsTwoTone-Regular.codepoints'
+
+material_icons_filled:
+  label: 'Material Icons'
+  plugin: 'codepoints'
+  config:
+    template: '<span class="material-icons">{{ icon_id }}</span>'
+    library: 'ui_icons_test/material'
+  assets:
+    - 'https://raw.githubusercontent.com/google/material-design-icons/master/font/MaterialIcons-Regular.codepoints'
